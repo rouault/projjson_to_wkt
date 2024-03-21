@@ -6,7 +6,10 @@ string into a [WKT CRS](https://www.ogc.org/standards/wkt-crs) string (WKT1
 or WKT2:2019 variants supported).
 
 This library is a single file with no dependency, that could be easily ported
-to other languages.
+to other languages. The following languages are available:
+
+- Python (this repository)
+- [JavaScript](https://github.com/m-mohr/projjson_to_wkt)
 
 Currently supported object types are: GeodeticCRS, GeographicCRS, ProjectedCRS,
 VerticalCRS, CompoundCRS, DerivedGeodeticCRS and DerivedGeographicCRS.
