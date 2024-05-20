@@ -4,6 +4,9 @@ projjson_to_wkt - Python library to convert a PROJJSON string to WKT
 Converts a [PROJJSON](https://proj.org/specifications/projjson.html) CRS
 string into a [WKT CRS](https://www.ogc.org/standards/wkt-crs) string (WKT1
 or WKT2:2019 variants supported).
+Warning: while the export to WKT1 should be syntaxically correct, datum, projection
+method or parameter names will be the one of WKT2, and thus a number of
+implementations will in practice fail to understand such WKT1 strings.
 
 This library is a single file with no dependency, that could be easily ported
 to other languages. The following languages are available:
