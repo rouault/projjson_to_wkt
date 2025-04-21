@@ -531,7 +531,7 @@ class PROJJSONToWKT:
         type = projjson["type"]
         if type in ("GeodeticCRS", "GeographicCRS"):
             self.geodetic_crs_to_wkt(projjson)
-        elif type in ("DerivedGeodeticCRS", "DerivedGeogrpahicCRS"):
+        elif type in ("DerivedGeodeticCRS", "DerivedGeographicCRS"):
             self.derived_geodetic_crs_to_wkt(projjson)
         elif type == "ProjectedCRS":
             self.projected_crs_to_wkt(projjson)
